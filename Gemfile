@@ -21,6 +21,8 @@ gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'carrierwave', '~> 1.0'
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
+gem "fog-aws"
+gem "figaro"
 
 
 
