@@ -8,7 +8,6 @@
         <%= image_tag listing.image.url %>
           <div class="caption">
             <h3><%= listing.name %></h3>
-            <p><%= number_to_currency(listing.price) %></p>
               <p><%= "Renter: #{listing.user.name}" %></p>
                 <%= link_to 'Show', listing, class: "btn btn-link" %><br>
                 <%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link"  %><br>
