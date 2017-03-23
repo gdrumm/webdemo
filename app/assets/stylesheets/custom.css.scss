@@ -34,3 +34,10 @@ body {
 .center {
   text-align: center;
 }
+
+.jumbotron {
+  background-image: url('rentit.png');
+  h1, h2 {
+    font-family: guardian-egyptt, georgia, serif;
+    }
+}
