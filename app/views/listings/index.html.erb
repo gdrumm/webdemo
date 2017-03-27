@@ -13,7 +13,7 @@
             <h3><%= listing.name %></h3>
             <p><%= number_to_currency(listing.price, :locale => :fr) %></p>
             <h4><%= listing.address %></h4>
-              <p><%= "Renter: #{listing.user.name}" %></p>
+              <h5><%= "Renter: #{listing.user.name}" %></h5>
           </div>
       </div>
   </div>
