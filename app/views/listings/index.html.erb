@@ -4,6 +4,8 @@
        have for you!</h2>
 </div>
   <div class="center" style="margin-top:10px;">
+    <div class="clearfix visible-md-block"></div>
+
     <div class="row form-group">
     <% @listings.each do |listing| %>
     <div class="col-md-3">
@@ -20,7 +22,7 @@
     <% end %>
   </div>
 </div>
-
+</div>
 <br>
 
 <% if user_signed_in? %>
