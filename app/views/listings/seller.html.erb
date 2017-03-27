@@ -13,7 +13,7 @@
       <td><%= image_tag listing.image.url(:thumb) %></td>
       <td><%= listing.name %></td>
       <td><%= listing.description %></td>
-      <td><%= number_to_currency(listing.price) %></td>
+      <td><%= number_to_currency(listing.price, :locale => :fr) %></td>
       <td>
         <div class="btn-group">
           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
