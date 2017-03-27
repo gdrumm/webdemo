@@ -8,7 +8,7 @@
 
  	<div class="col-md-6">
   		<h2><%= @listing.name %></h2>
-  		<h3><%= number_to_currency(@listing.price) %></h3><br>
+  		<h3><%= number_to_currency(@listing.price, :locale => :fr) %></h3><br>
   		<p><%= @listing.description %></p>
       <p><%= @listing.address %></p>
   		</div>
