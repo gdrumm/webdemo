@@ -5,18 +5,18 @@
 </div>
   <div class="center" style="margin-top:10px;">
     <div class="row form-group">
-    <% @listings.each do |listing| %>
-    <div class="col-md-3">
-      <div class="panel panel-default">
-      <%= link_to image_tag(listing.image.url), listing %>
-          <div class="panel-body">
+      <% @listings.each do |listing| %>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <%= link_to image_tag(listing.image.url), listing %>
+            <div class="panel-body">
             <h3><%= listing.name %></h3>
             <p><%= number_to_currency(listing.price, :locale => :fr) %></p>
             <p><%= listing.address %></p>
-              <h5><%= "Renter: #{listing.user.name}" %></h5>
-          </div>
+            <h5><%= "Renter: #{listing.user.name}" %></h5>
+            </div>
+       </div>
       </div>
-  </div>
     <% end %>
   </div>
 </div>
